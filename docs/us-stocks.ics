@@ -1,0 +1,715 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//us-stock-calendar//TH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:US Stocks 📈
+X-WR-TIMEZONE:Asia/Bangkok
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:AAPL:2026-10-28@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261028T200500Z
+DTEND:20261028T203500Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 AAPL ประกาศงบ
+DESCRIPTION:Apple Inc. (AAPL) — ไตรมาส Q4/2026\nเวล
+ า: หลังตลาดปิด (AMC)\nEPS คาด: 2.0219\nร
+ ายได้คาด: $115.33B
+URL:https://finance.yahoo.com/quote/AAPL
+END:VEVENT
+BEGIN:VEVENT
+UID:AMZN:2026-10-28@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261028T200500Z
+DTEND:20261028T203500Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 AMZN ประกาศงบ
+DESCRIPTION:Amazon (AMZN) — ไตรมาส Q3/2026\nเวลา: 
+ หลังตลาดปิด (AMC)\nEPS คาด: 1.9886\nรา
+ ยได้คาด: $206.20B
+URL:https://finance.yahoo.com/quote/AMZN
+END:VEVENT
+BEGIN:VEVENT
+UID:BA:2026-10-27@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261027T110000Z
+DTEND:20261027T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 BA ประกาศงบ
+DESCRIPTION:Boeing (BA) — ไตรมาส Q3/2026\nเวลา: ก
+ ่อนตลาดเปิด (BMO)\nEPS คาด: -0.1512\nรา
+ ยได้คาด: $25.75B
+URL:https://finance.yahoo.com/quote/BA
+END:VEVENT
+BEGIN:VEVENT
+UID:GOOGL:2026-10-27@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261027T200500Z
+DTEND:20261027T203500Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 GOOGL ประกาศงบ
+DESCRIPTION:Alphabet Inc. (Class A) (GOOGL) — ไตรมาส Q3/202
+ 6\nเวลา: หลังตลาดปิด (AMC)\nEPS คาด:
+  3.1199\nรายได้คาด: $131.21B
+URL:https://finance.yahoo.com/quote/GOOGL
+END:VEVENT
+BEGIN:VEVENT
+UID:META:2026-10-27@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261027T200500Z
+DTEND:20261027T203500Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 META ประกาศงบ
+DESCRIPTION:Meta Platforms (META) — ไตรมาส Q3/2026\nเว
+ ลา: หลังตลาดปิด (AMC)\nEPS คาด: 6.5922\n
+ รายได้คาด: $64.53B
+URL:https://finance.yahoo.com/quote/META
+END:VEVENT
+BEGIN:VEVENT
+UID:MSFT:2026-10-27@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+TRANSP:TRANSPARENT
+SUMMARY:💼 MSFT ประกาศงบ
+DESCRIPTION:Microsoft (MSFT) — ไตรมาส Q1/2027\nเวลา
+ : ยังไม่ระบุเวลา\nEPS คาด: 4.8231\nร
+ ายได้คาด: $92.45B
+URL:https://finance.yahoo.com/quote/MSFT
+END:VEVENT
+BEGIN:VEVENT
+UID:V:2026-10-26@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261026T200500Z
+DTEND:20261026T203500Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 V ประกาศงบ
+DESCRIPTION:Visa Inc. (V) — ไตรมาส Q4/2026\nเวลา: 
+ หลังตลาดปิด (AMC)\nEPS คาด: 3.5019\nรา
+ ยได้คาด: $12.31B
+URL:https://finance.yahoo.com/quote/V
+END:VEVENT
+BEGIN:VEVENT
+UID:ABBV:2026-10-23@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+TRANSP:TRANSPARENT
+SUMMARY:💼 ABBV ประกาศงบ
+DESCRIPTION:AbbVie (ABBV) — ไตรมาส Q3/2026\nเวลา: 
+ ยังไม่ระบุเวลา\nEPS คาด: 3.9241\nร
+ ายได้คาด: $17.66B
+URL:https://finance.yahoo.com/quote/ABBV
+END:VEVENT
+BEGIN:VEVENT
+UID:CVX:2026-10-23@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261023T110000Z
+DTEND:20261023T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 CVX ประกาศงบ
+DESCRIPTION:Chevron Corporation (CVX) — ไตรมาส Q3/2026\nเ
+ วลา: ก่อนตลาดเปิด (BMO)\nEPS คาด: 4.
+ 7945\nรายได้คาด: $58.48B
+URL:https://finance.yahoo.com/quote/CVX
+END:VEVENT
+BEGIN:VEVENT
+UID:XOM:2026-10-23@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+TRANSP:TRANSPARENT
+SUMMARY:💼 XOM ประกาศงบ
+DESCRIPTION:ExxonMobil (XOM) — ไตรมาส Q3/2026\nเวลา
+ : ยังไม่ระบุเวลา\nEPS คาด: 3.5366\nร
+ ายได้คาด: $101.17B
+URL:https://finance.yahoo.com/quote/XOM
+END:VEVENT
+BEGIN:VEVENT
+UID:INTC:2026-10-22@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261022T200500Z
+DTEND:20261022T203500Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 INTC ประกาศงบ
+DESCRIPTION:Intel (INTC) — ไตรมาส Q3/2026\nเวลา: 
+ หลังตลาดปิด (AMC)\nEPS คาด: 0.3946\nรา
+ ยได้คาด: $16.74B
+URL:https://finance.yahoo.com/quote/INTC
+END:VEVENT
+BEGIN:VEVENT
+UID:MA:2026-10-22@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261022T110000Z
+DTEND:20261022T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 MA ประกาศงบ
+DESCRIPTION:Mastercard (MA) — ไตรมาส Q3/2026\nเวลา:
+  ก่อนตลาดเปิด (BMO)\nEPS คาด: 5.3041\nร
+ ายได้คาด: $9.93B
+URL:https://finance.yahoo.com/quote/MA
+END:VEVENT
+BEGIN:VEVENT
+UID:MCD:2026-10-22@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261022T110000Z
+DTEND:20261022T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 MCD ประกาศงบ
+DESCRIPTION:McDonald's (MCD) — ไตรมาส Q3/2026\nเวลา
+ : ก่อนตลาดเปิด (BMO)\nEPS คาด: 3.4365\nร
+ ายได้คาด: $7.39B
+URL:https://finance.yahoo.com/quote/MCD
+END:VEVENT
+BEGIN:VEVENT
+UID:PG:2026-10-22@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261022T110000Z
+DTEND:20261022T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 PG ประกาศงบ
+DESCRIPTION:Procter & Gamble (PG) — ไตรมาส Q1/2027\nเว
+ ลา: ก่อนตลาดเปิด (BMO)\nEPS คาด: 1.934
+ 7\nรายได้คาด: $23.41B
+URL:https://finance.yahoo.com/quote/PG
+END:VEVENT
+BEGIN:VEVENT
+UID:IBM:2026-10-21@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261021T200500Z
+DTEND:20261021T203500Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 IBM ประกาศงบ
+DESCRIPTION:IBM (IBM) — ไตรมาส Q3/2026\nเวลา: ห
+ ลังตลาดปิด (AMC)\nEPS คาด: 2.9044\nราย
+ ได้คาด: $16.98B
+URL:https://finance.yahoo.com/quote/IBM
+END:VEVENT
+BEGIN:VEVENT
+UID:NFLX:2026-10-20@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261020T200500Z
+DTEND:20261020T203500Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 NFLX ประกาศงบ
+DESCRIPTION:Netflix (NFLX) — ไตรมาส Q3/2026\nเวลา: 
+ หลังตลาดปิด (AMC)\nEPS คาด: 0.8379\nรา
+ ยได้คาด: $13.14B
+URL:https://finance.yahoo.com/quote/NFLX
+END:VEVENT
+BEGIN:VEVENT
+UID:TSLA:2026-10-20@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261020T200500Z
+DTEND:20261020T203500Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 TSLA ประกาศงบ
+DESCRIPTION:Tesla\, Inc. (TSLA) — ไตรมาส Q3/2026\nเวล
+ า: หลังตลาดปิด (AMC)\nEPS คาด: 0.4464\nร
+ ายได้คาด: $28.18B
+URL:https://finance.yahoo.com/quote/TSLA
+END:VEVENT
+BEGIN:VEVENT
+UID:KO:2026-10-19@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261019T110000Z
+DTEND:20261019T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 KO ประกาศงบ
+DESCRIPTION:Coca-Cola Company (The) (KO) — ไตรมาส Q3/2026\n
+ เวลา: ก่อนตลาดเปิด (BMO)\nEPS คาด:
+  0.9049\nรายได้คาด: $13.27B
+URL:https://finance.yahoo.com/quote/KO
+END:VEVENT
+BEGIN:VEVENT
+UID:TXN:2026-10-19@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261019T200500Z
+DTEND:20261019T203500Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 TXN ประกาศงบ
+DESCRIPTION:Texas Instruments (TXN) — ไตรมาส Q3/2026\nเ
+ วลา: หลังตลาดปิด (AMC)\nEPS คาด: 2.436
+ 2\nรายได้คาด: $5.97B
+URL:https://finance.yahoo.com/quote/TXN
+END:VEVENT
+BEGIN:VEVENT
+UID:BAC:2026-10-14@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261014T110000Z
+DTEND:20261014T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 BAC ประกาศงบ
+DESCRIPTION:Bank of America (BAC) — ไตรมาส Q3/2026\nเว
+ ลา: ก่อนตลาดเปิด (BMO)\nEPS คาด: 1.184
+ 2\nรายได้คาด: $31.50B
+URL:https://finance.yahoo.com/quote/BAC
+END:VEVENT
+BEGIN:VEVENT
+UID:GS:2026-10-13@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261013T110000Z
+DTEND:20261013T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 GS ประกาศงบ
+DESCRIPTION:Goldman Sachs (GS) — ไตรมาส Q3/2026\nเวล
+ า: ก่อนตลาดเปิด (BMO)\nEPS คาด: 16.4064\
+ nรายได้คาด: $17.99B
+URL:https://finance.yahoo.com/quote/GS
+END:VEVENT
+BEGIN:VEVENT
+UID:JNJ:2026-10-13@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+TRANSP:TRANSPARENT
+SUMMARY:💼 JNJ ประกาศงบ
+DESCRIPTION:Johnson & Johnson (JNJ) — ไตรมาส Q3/2026\nเ
+ วลา: ยังไม่ระบุเวลา\nEPS คาด: 2.
+ 5873\nรายได้คาด: $25.57B
+URL:https://finance.yahoo.com/quote/JNJ
+END:VEVENT
+BEGIN:VEVENT
+UID:JPM:2026-10-13@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+TRANSP:TRANSPARENT
+SUMMARY:💼 JPM ประกาศงบ
+DESCRIPTION:JPMorgan Chase (JPM) — ไตรมาส Q3/2026\nเว
+ ลา: ยังไม่ระบุเวลา\nEPS คาด: 5.881
+ 8\nรายได้คาด: $51.45B
+URL:https://finance.yahoo.com/quote/JPM
+END:VEVENT
+BEGIN:VEVENT
+UID:UNH:2026-10-13@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261013T110000Z
+DTEND:20261013T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 UNH ประกาศงบ
+DESCRIPTION:UnitedHealth Group (UNH) — ไตรมาส Q3/2026\nเ
+ วลา: ก่อนตลาดเปิด (BMO)\nEPS คาด: 4.
+ 1893\nรายได้คาด: $112.52B
+URL:https://finance.yahoo.com/quote/UNH
+END:VEVENT
+BEGIN:VEVENT
+UID:WFC:2026-10-13@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261013T110000Z
+DTEND:20261013T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 WFC ประกาศงบ
+DESCRIPTION:Wells Fargo (WFC) — ไตรมาส Q3/2026\nเวล
+ า: ก่อนตลาดเปิด (BMO)\nEPS คาด: 1.8668\n
+ รายได้คาด: $22.59B
+URL:https://finance.yahoo.com/quote/WFC
+END:VEVENT
+BEGIN:VEVENT
+UID:PEP:2026-10-08@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261008T110000Z
+DTEND:20261008T113000Z
+TRANSP:TRANSPARENT
+SUMMARY:💼 PEP ประกาศงบ
+DESCRIPTION:PepsiCo (PEP) — ไตรมาส Q3/2026\nเวลา: 
+ ก่อนตลาดเปิด (BMO)\nEPS คาด: 2.3232\nร
+ ายได้คาด: $25.25B
+URL:https://finance.yahoo.com/quote/PEP
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-01@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (1): ACN
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 1 ราย (เรียงตามราย
+ ได้คาด)\n\n— หลังตลาดปิด (AMC) —\n
+ ACN Accenture | EPS คาด 3.2131\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-05@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (1): MKC
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 1 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nMKC McCormick & Company | EPS คาด 0.7633\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-06@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (1): STZ
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 1 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nSTZ Constellation Brands | EPS คาด 3.6097\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-09@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (2): DAL\, BLK
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 2 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nDAL Delta Air Lines | EPS คาด 2.0511\n\n— ไม่ระ
+ บุเวลา —\nBLK BlackRock | EPS คาด 14.4172\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-13@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (3): C\, ABT\, DPZ
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 3 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nABT Abbott Laboratories | EPS คาด 1.434\nDPZ Domino's | EPS 
+ คาด 4.4347\n\n— ไม่ระบุเวลา —\nC Citigro
+ up | EPS คาด 2.721\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-14@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (3): MS\, STT\, FAST
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 3 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nMS Morgan Stanley | EPS คาด 3.2287\nSTT State Street Corporat
+ ion | EPS คาด 3.6788\n\n— ไม่ระบุเวลา —\
+ nFAST Fastenal | EPS คาด 0.3443\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-15@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (10): USB\, FCX\, SCHW\, MRSH\, PNC\, GPC
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 10 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nSCHW Charles Schwab Corporation | EPS คาด 1.704\nMRSH Marsh M
+ cLennan | EPS คาด 2.0156\nPNC PNC Financial Services | EPS คา
+ ด 4.9712\nBX Blackstone Inc. | EPS คาด 1.4016\n\n— ไม่
+ ระบุเวลา —\nUSB U.S. Bancorp | EPS คาด 1.3275\nF
+ CX Freeport-McMoRan | EPS คาด 0.7266\nGPC Genuine Parts Company | 
+ EPS คาด 2.0794\nBNY BNY Mellon | EPS คาด 2.2689\nPLD Prologi
+ s | EPS คาด 0.8181\nSNA Snap-on | EPS คาด 5.0187\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-16@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (6): TRV\, SLB\, TFC\, MTB\, CFG\, RF
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 6 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nTRV Travelers Companies (The) | EPS คาด 6.8403\nSLB Schlumber
+ ger | EPS คาด 0.621\n\n— ไม่ระบุเวลา —\n
+ TFC Truist Financial | EPS คาด 1.1265\nMTB M&T Bank | EPS คา
+ ด 5.0051\nCFG Citizens Financial Group | EPS คาด 1.4087\nRF Regi
+ ons Financial Corporation | EPS คาด 0.6821\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-19@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (12): RTX\, LMT\, CB\, GE\, PCAR\, MMM
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 12 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nRTX RTX Corporation | EPS คาด 1.7848\nLMT Lockheed Martin | E
+ PS คาด 7.5222\nGE GE Aerospace | EPS คาด 2.0474\nPCAR Paccar
+  | EPS คาด 1.6294\nTDY Teledyne Technologies | EPS คาด 6.215
+ \nPNR Pentair | EPS คาด 1.0971\n\n— หลังตลาดป
+ ิด (AMC) —\nCB Chubb Limited | EPS คาด 6.5285\nSTLD Steel Dy
+ namics | EPS คาด 5.5624\nWRB W. R. Berkley Corporation | EPS ค
+ าด 1.1295\nEQT EQT Corporation | EPS คาด 0.4737\n\n— ไม
+ ่ระบุเวลา —\nMMM 3M | EPS คาด 2.4178\nFITB Fif
+ th Third Bancorp | EPS คาด 1.0147\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-20@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (23): GM\, VZ\, UAL\, TMO\, PM\, NOC
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 23 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nGM General Motors | EPS คาด 3.7365\nTMO Thermo Fisher Scienti
+ fic | EPS คาด 6.4707\nPM Philip Morris International | EPS คา
+ ด 2.3347\nNOC Northrop Grumman | EPS คาด 7.235\nHAL Halliburton 
+ | EPS คาด 0.5893\nSYF Synchrony Financial | EPS คาด 2.4031\n
+ HLT Hilton Worldwide | EPS คาด 2.3775\nWAB Wabtec | EPS คาด 
+ 2.7624\nNVR NVR\, Inc. | EPS คาด 105.476\nAVY Avery Dennison | EPS
+  คาด 2.3536\nMCO Moody's Corporation | EPS คาด 4.2947\nMSCI 
+ MSCI | EPS คาด 5.1322\n\n— หลังตลาดปิด (AM
+ C) —\nOMC Omnicom Group | EPS คาด 2.6046\nURI United Rentals | E
+ PS คาด 14.0554\nJBHT J.B. Hunt | EPS คาด 2.056\nISRG Intuiti
+ ve Surgical | EPS คาด 2.6904\nIBKR Interactive Brokers | EPS ค
+ าด 0.7021\nGL Globe Life | EPS คาด 5.0384\n\n— ไม่ร
+ ะบุเวลา —\nVZ Verizon | EPS คาด 1.3135\nUAL United
+  Airlines Holdings | EPS คาด 2.9154\nORLY O'Reilly Automotive | EP
+ S คาด 0.9447\nVRT Vertiv | EPS คาด 1.8525\nKEY KeyCorp | EPS
+  คาด 0.4638\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-21@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (24): ELV\, F\, T\, TMUS\, LRCX\, LUV
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 24 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nELV Elevance Health | EPS คาด 4.7076\nDHR Danaher Corporation
+  | EPS คาด 1.9287\nTXT Textron | EPS คาด 1.5393\nNSC Norfolk
+  Southern | EPS คาด 3.6155\nNTRS Northern Trust | EPS คาด 2.
+ 8773\nCNP CenterPoint Energy | EPS คาด 0.4936\nCME CME Group | EPS
+  คาด 2.9653\nWST West Pharmaceutical Services | EPS คาด 2.21
+ 37\n\n— หลังตลาดปิด (AMC) —\nF Ford Motor Comp
+ any | EPS คาด 0.428\nBKR Baker Hughes | EPS คาด 0.612\nKMI K
+ inder Morgan | EPS คาด 0.3281\nPPG PPG Industries | EPS คาด 
+ 2.1609\nLVS Las Vegas Sands | EPS คาด 0.7534\nEFX Equifax | EPS 
+ คาด 2.2414\n\n— ไม่ระบุเวลา —\nT AT&T | 
+ EPS คาด 0.6121\nTMUS T-Mobile US | EPS คาด 2.9627\nLRCX Lam 
+ Research | EPS คาด 2.2199\nLUV Southwest Airlines | EPS คาด 
+ 0.6075\nCSX CSX Corporation | EPS คาด 0.5429\nPKG Packaging Corpor
+ ation of America | EPS คาด 2.9479\nROP Roper Technologies | EPS 
+ คาด 5.8453\nNDAQ Nasdaq\, Inc. | EPS คาด 1.0447\nCCI Crown C
+ astle | EPS คาด 0.7045\nDOC Healthpeak Properties | EPS คาด 
+ 0.0337\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-22@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (55): VLO\, CMCSA\, COF\, GD\, CBRE\, DOW
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 55 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nVLO Valero Energy | EPS คาด 17.9026\nCMCSA Comcast | EPS ค
+ าด 1.0171\nGD General Dynamics | EPS คาด 4.2465\nDOW Dow Inc. 
+ | EPS คาด 0.6808\nLIN Linde plc | EPS คาด 4.5614\nNEE NextEr
+ a Energy | EPS คาด 1.1835\nKDP Keurig Dr Pepper | EPS คาด 0.
+ 6255\nUNP Union Pacific Corporation | EPS คาด 3.4826\nAEP American
+  Electric Power | EPS คาด 1.946\nNEM Newmont | EPS คาด 2.104
+ 9\nCARR Carrier Global | EPS คาด 0.7844\nITW Illinois Tool Works |
+  EPS คาด 2.9997\nPHM PulteGroup | EPS คาด 2.6954\nSWK Stanle
+ y Black & Decker | EPS คาด 1.5745\nSPGI S&P Global | EPS คาด
+  4.5164\nDTE DTE Energy | EPS คาด 2.4152\nHSY Hershey Company (The
+ ) | EPS คาด 2.1358\nDGX Quest Diagnostics | EPS คาด 2.8811\n
+ WTW Willis Towers Watson | EPS คาด 3.6583\nCMS CMS Energy | EPS 
+ คาด 1.1352\nTROW T. Rowe Price | EPS คาด 2.7385\nLII Lennox 
+ International | EPS คาด 7.525\nHAS Hasbro | EPS คาด 1.8819\n
+ ARES Ares Management | EPS คาด 1.3608\n\n— หลังตลา
+ ดปิด (AMC) —\nCOF Capital One | EPS คาด 5.4541\nHIG Hart
+ ford (The) | EPS คาด 3.0907\nLHX L3Harris | EPS คาด 3.009\nF
+ E FirstEnergy | EPS คาด 0.9439\nRSG Republic Services | EPS คา
+ ด 1.9463\nPFG Principal Financial Group | EPS คาด 2.529\nAJG Art
+ hur J. Gallagher & Co. | EPS คาด 3.1106\nCPT Camden Property Trust
+  | EPS คาด 0.2954\n\n— ไม่ระบุเวลา —\nCB
+ RE CBRE Group | EPS คาด 2.0069\nGILD Gilead Sciences | EPS คา
+ ด 2.1803\nPCG PG&E Corporation | EPS คาด 0.4251\nEME Emcor | EPS
+  คาด 8.4031\nHON Honeywell Technologies | EPS คาด 2.1856\nXE
+ L Xcel Energy | EPS คาด 1.3272\nWDC Western Digital | EPS คา
+ ด 4.0949\nTSCO Tractor Supply | EPS คาด 0.4138\nLH Labcorp | EPS
+  คาด 4.8037\nFIX Comfort Systems USA | EPS คาด 12.9358\nCINF
+  Cincinnati Financial | EPS คาด 1.9291\nHBAN Huntington Bancshares
+  | EPS คาด 0.3912\nAMT American Tower | EPS คาด 1.6588\nDOV 
+ Dover Corporation | EPS คาด 2.8854\nWY Weyerhaeuser | EPS คา
+ ด 0.0968\nDLR Digital Realty | EPS คาด 0.5454\nDECK Deckers Bran
+ ds | EPS คาด 1.8239\nRMD ResMed| | EPS คาด 2.7029\nDXCM Dexc
+ om | EPS คาด 0.6846\nALLE Allegion | EPS คาด 2.5445\nERIE Er
+ ie Indemnity | EPS คาด 3.4476\nAOS A. O. Smith | EPS คาด 0.9
+ 064\nVRSN Verisign | EPS คาด 2.4577\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-23@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (4): AXP\, HCA\, LYB\, DVA
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 4 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nAXP American Express | EPS คาด 4.5826\nHCA HCA Healthcare | E
+ PS คาด 6.7941\nLYB LyondellBasell | EPS คาด 2.7231\n\n— 
+ หลังตลาดปิด (AMC) —\nDVA DaVita | EPS คาด 
+ 3.6141\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-26@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (38): SYY\, NUE\, OKE\, MDLZ\, BKNG\, WM
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 38 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nSHW Sherwin-Williams | EPS คาด 3.7219\nTT Trane Technologies 
+ | EPS คาด 4.8651\nRCL Royal Caribbean Group | EPS คาด 6.384\
+ nGLW Corning Inc. | EPS คาด 0.8866\nECL Ecolab | EPS คาด 2.1
+ 963\nIQV IQVIA | EPS คาด 3.306\nXYL Xylem Inc. | EPS คาด 1.4
+ 687\nIVZ Invesco | EPS คาด 0.7495\nRVTY Revvity | EPS คาด 1.
+ 322\n\n— หลังตลาดปิด (AMC) —\nNUE Nucor | EPS 
+ คาด 5.9509\nOKE Oneok | EPS คาด 1.5635\nMDLZ Mondelez Intern
+ ational | EPS คาด 0.7286\nBKNG Booking Holdings | EPS คาด 4.
+ 5663\nWM Waste Management | EPS คาด 2.2541\nUHS Universal Health S
+ ervices | EPS คาด 5.2408\nACGL Arch Capital Group | EPS คาด 
+ 1.8883\nEG Everest Group | EPS คาด 8.6051\nEXE Expand Energy | EPS
+  คาด 1.3472\nBRO Brown & Brown | EPS คาด 1.0965\nVLTO Veralt
+ o | EPS คาด 1.1098\nTER Teradyne | EPS คาด 2.0608\nBE Bloom 
+ Energy | EPS คาด 0.6889\nBXP BXP\, Inc. | EPS คาด 0.5194\nFF
+ IV F5\, Inc. | EPS คาด 4.3407\nVMRK Vivmark Residential | EPS ค
+ าด 0.227\nREG Regency Centers | EPS คาด 0.6123\n\n— ไม
+ ่ระบุเวลา —\nSYY Sysco | EPS คาด 1.2047\nEIX E
+ dison International | EPS คาด 1.9684\nGEHC GE HealthCare | EPS ค
+ าด 1.2285\nREGN Regeneron Pharmaceuticals | EPS คาด 16.1712\nS
+ TX Seagate Technology | EPS คาด 7.4374\nWELL Welltower | EPS ค
+ าด 0.6719\nHUBB Hubbell Incorporated | EPS คาด 5.8335\nCDNS Ca
+ dence Design Systems | EPS คาด 2.0849\nINCY Incyte | EPS คาด
+  -3.4597\nCSGP CoStar Group | EPS คาด 0.344\nJKHY Jack Henry & Ass
+ ociates | EPS คาด 2.1039\nARE Alexandria Real Estate Equities | EP
+ S คาด -0.0343\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-27@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (43): CVS\, CNC\, UPS\, CAT\, PRU\, SBUX
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 43 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nCVS CVS Health | EPS คาด 1.6398\nCNC Centene Corporation | EP
+ S คาด 0.0982\nUPS United Parcel Service | EPS คาด 1.6452\nCA
+ T Caterpillar Inc. | EPS คาด 7.0277\nKHC Kraft Heinz | EPS คา
+ ด 0.4282\nFISV Fiserv | EPS คาด 1.7573\nETR Entergy | EPS คา
+ ด 1.6884\nMAS Masco | EPS คาด 1.041\nNI NiSource | EPS คาด
+  0.2189\nGNRC Generac | EPS คาด 2.4812\nVRSK Verisk Analytics | EP
+ S คาด 1.9661\n\n— หลังตลาดปิด (AMC) —\nP
+ RU Prudential Financial | EPS คาด 3.5251\nSBUX Starbucks | EPS ค
+ าด 0.7265\nPYPL PayPal | EPS คาด 1.3386\nCTSH Cognizant | EPS 
+ คาด 1.4961\nTEL TE Connectivity | EPS คาด 3.0973\nCHRW C.H. 
+ Robinson | EPS คาด 1.7281\nMGM MGM Resorts | EPS คาด 0.2202\
+ nNOW ServiceNow | EPS คาด 1.0354\nNXPI NXP Semiconductors | EPS 
+ คาด 4.1709\nCMG Chipotle Mexican Grill | EPS คาด 0.294\nBEN 
+ Franklin Resources | EPS คาด 0.7703\nPSA Public Storage | EPS ค
+ าด 2.2675\nROL Rollins\, Inc. | EPS คาด 0.3566\nEXR Extra Spac
+ e Storage | EPS คาด 1.1893\nINVH Invitation Homes | EPS คาด 
+ 0.1819\nTYL Tyler Technologies | EPS คาด 3.4954\nMAA Mid-America A
+ partment Communities | EPS คาด 0.7747\nESS Essex Property Trust | 
+ EPS คาด 1.4706\nUDR UDR\, Inc. | EPS คาด 0.1284\n\n— ไ
+ ม่ระบุเวลา —\nSW Smurfit Westrock | EPS คาด 
+ 0.6337\nFLEX Flex Ltd. | EPS คาด 1.0699\nCVNA Carvana | EPS คา
+ ด 0.4602\nADP Automatic Data Processing | EPS คาด 2.7964\nKLAC K
+ LA Corporation | EPS คาด 1.2005\nOTIS Otis Worldwide | EPS คา
+ ด 1.0454\nEBAY eBay Inc. | EPS คาด 1.4128\nEQIX Equinix | EPS 
+ คาด 4.3319\nGRMN Garmin | EPS คาด 2.4465\nVTR Ventas | EPS 
+ คาด 0.1784\nODFL Old Dominion | EPS คาด 1.6279\nFTV Fortive 
+ | EPS คาด 0.7109\nIEX IDEX Corporation | EPS คาด 2.2501\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-28@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+TRANSP:TRANSPARENT
+SUMMARY:📊 งบ S&P 500 (36): CI\, CAH\, PSX\, GEV\, PWR\, APH
+DESCRIPTION:บริษัทใน S&P 500 ที่ประกาศ
+ งบวันนี้ 36 ราย (เรียงตามราย
+ ได้คาด)\n\n— ก่อนตลาดเปิด (BMO) 
+ —\nCI Cigna | EPS คาด 7.7256\nPSX Phillips 66 | EPS คาด 10
+ .8185\nPWR Quanta Services | EPS คาด 5.045\nSO Southern Company | 
+ EPS คาด 1.7108\nBSX Boston Scientific | EPS คาด 0.779\nKMB K
+ imberly-Clark | EPS คาด 1.6382\nHII Huntington Ingalls Industries 
+ | EPS คาด 4.4515\nAPTV Aptiv | EPS คาด 1.3541\nICE Intercont
+ inental Exchange | EPS คาด 1.9214\nHWM Howmet Aerospace | EPS ค
+ าด 1.3801\nWEC WEC Energy Group | EPS คาด 0.944\nAME Ametek | 
+ EPS คาด 2.1214\nKIM Kimco Realty | EPS คาด 0.2058\n\n— ห
+ ลังตลาดปิด (AMC) —\nSYK Stryker Corporation | EPS 
+ คาด 3.6078\nAMP Ameriprise Financial | EPS คาด 11.8998\nRJF 
+ Raymond James Financial | EPS คาด 3.3904\nEW Edwards Lifesciences 
+ | EPS คาด 0.7582\nGDDY GoDaddy | EPS คาด 1.882\nFSLR First S
+ olar | EPS คาด 4.7593\nCOIN Coinbase | EPS คาด -0.1184\nILMN
+  Illumina\, Inc. | EPS คาด 1.3801\nMPWR Monolithic Power Systems |
+  EPS คาด 7.8481\nALGN Align Technology | EPS คาด 2.8571\n\n
+ — ไม่ระบุเวลา —\nCAH Cardinal Health | EPS ค
+ าด 2.9633\nGEV GE Vernova | EPS คาด 4.0398\nAPH Amphenol | EPS
+  คาด 0.7207\nIP International Paper | EPS คาด 0.3254\nFOXA F
+ ox Corporation (Class A) | EPS คาด 2.1023\nMSI Motorola Solutions 
+ | EPS คาด 4.4611\nBAX Baxter International | EPS คาด 0.5238\
+ nBIIB Biogen | EPS คาด 2.0853\nVMC Vulcan Materials Company | EPS 
+ คาด 3.0406\nIR Ingersoll Rand | EPS คาด 0.9268\nAWK American
+  Water Works | EPS คาด 2.1121\nVICI Vici Properties | EPS คา
+ ด 0.7264\nRDDT Reddit | EPS คาด 1.3584\n
+END:VEVENT
+BEGIN:VEVENT
+UID:fomc:2026-10-28@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261028T180000Z
+DTEND:20261028T190000Z
+TRANSP:TRANSPARENT
+SUMMARY:🏦 FOMC ประกาศดอกเบี้ย
+DESCRIPTION:Fed ประกาศมติอัตราดอกเบ
+ ี้ย 14:00 ET และแถลงข่าว 14:30 ET\nผลก
+ ระทบสูงต่อทั้งตลาด (ดัชนี\
+ , bond yield\, USD)
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏦 FOMC ประกาศดอกเบี้ย
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fomc:2026-12-09@us-stock-calendar
+DTSTAMP:20260923T160747Z
+DTSTART:20261209T190000Z
+DTEND:20261209T200000Z
+TRANSP:TRANSPARENT
+SUMMARY:🏦 FOMC ประกาศดอกเบี้ย + Dot Plot
+DESCRIPTION:Fed ประกาศมติอัตราดอกเบ
+ ี้ย 14:00 ET และแถลงข่าว 14:30 ET\nมี Su
+ mmary of Economic Projections (dot plot)\nผลกระทบสูง
+ ต่อทั้งตลาด (ดัชนี\, bond yield\, USD)
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🏦 FOMC ประกาศดอกเบี้ย + Dot Pl
+ ot
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
