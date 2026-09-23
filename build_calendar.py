@@ -5,7 +5,8 @@
 แหล่งข้อมูล
 - Finnhub (ฟรี): ปฏิทินงบ, ราคา (quote), ข่าวรายบริษัท
 - Federal Reserve: วันประชุม FOMC (ใส่ไว้ในโค้ด)
-- BLS: ตารางประกาศ CPI / PPI / Non-farm payrolls / JOLTS (ไฟล์ .ics ทางการ)
+- macro_events.py: CPI, Non-farm, Core PCE, GDP, PPI, Retail Sales, JOLTS, ECI,
+  ISM PMI, Jobless Claims, FOMC Minutes (วันจากตารางทางการ BLS/BEA/Census/ISM)
 
 ไม่ต้องติดตั้ง library เพิ่ม ใช้แค่ Python 3.9+
 """
@@ -22,6 +23,8 @@ import urllib.parse
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
+
+from macro_events import build_macro_events
 
 ET = ZoneInfo("America/New_York")
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -68,14 +71,6 @@ FOMC_DECISION_DAYS = [
     ("2027-10-27", False), ("2027-12-08", True),
 ]
 
-# คำใน SUMMARY ของ BLS ที่เราสนใจ -> (ชื่อไทย, ระดับผลกระทบ)
-BLS_KEEP = [
-    (r"Consumer Price Index", "CPI เงินเฟ้อ", "🔴"),
-    (r"Employment Situation", "Non-farm Payrolls / ตัวเลขจ้างงาน", "🔴"),
-    (r"Producer Price Index", "PPI ราคาผู้ผลิต", "🟡"),
-    (r"Job Openings and Labor Turnover", "JOLTS ตำแหน่งงานว่าง", "🟡"),
-    (r"Employment Cost Index", "ECI ต้นทุนค่าจ้าง", "🟡"),
-]
 
 
 # ---------------------------------------------------------------- HTTP
@@ -114,46 +109,6 @@ def load_sp500() -> dict[str, str]:
 def load_earnings(start: date, end: date) -> list[dict]:
     data = finnhub("/calendar/earnings", **{"from": start.isoformat(), "to": end.isoformat()})
     return data.get("earningsCalendar", []) or []
-
-
-def load_bls_events(start: date, end: date) -> list[dict]:
-    try:
-        raw = http_get("https://www.bls.gov/schedule/news_release/bls.ics").decode("utf-8", "replace")
-    except Exception as e:  # noqa: BLE001
-        print("WARN: โหลดปฏิทิน BLS ไม่ได้:", e, file=sys.stderr)
-        return []
-    raw = raw.replace("\r\n", "\n").replace("\r", "\n")
-    raw = re.sub(r"\n[ \t]", "", raw)  # unfold
-    events = []
-    for block in raw.split("BEGIN:VEVENT")[1:]:
-        summary = re.search(r"^SUMMARY[^:]*:(.*)$", block, re.M)
-        dtstart = re.search(r"^DTSTART([^:]*):(\S+)$", block, re.M)
-        if not summary or not dtstart:
-            continue
-        s = summary.group(1).replace("\\,", ",").strip()
-        match = next((k for k in BLS_KEEP if re.search(k[0], s, re.I)), None)
-        if not match:
-            continue
-        params, val = dtstart.group(1), dtstart.group(2)
-        try:
-            if len(val) == 8:  # date only -> 08:30 ET (เวลาปกติของ BLS)
-                dt = datetime.strptime(val, "%Y%m%d").replace(hour=8, minute=30, tzinfo=ET)
-            elif val.endswith("Z"):
-                dt = datetime.strptime(val, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
-            else:
-                tz = ET
-                m = re.search(r"TZID=([^;:]+)", params)
-                if m:
-                    try:
-                        tz = ZoneInfo(m.group(1).strip('"'))
-                    except Exception:  # noqa: BLE001
-                        tz = ET
-                dt = datetime.strptime(val, "%Y%m%dT%H%M%S").replace(tzinfo=tz)
-        except ValueError:
-            continue
-        if start <= dt.astimezone(ET).date() <= end:
-            events.append({"dt": dt, "name_th": match[1], "icon": match[2], "summary_en": s})
-    return events
 
 
 # ---------------------------------------------------------------- helpers
@@ -370,14 +325,16 @@ def main() -> int:
                              url="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
                              alarm_min=30))
 
-    # ----- BLS macro
-    for b in load_bls_events(start, end + timedelta(days=30)):
-        s = b["dt"]
-        events.append(vevent(f"bls:{utc(s)}:{b['name_th']}", f"{b['icon']} {b['name_th']}",
-                             f"ผลกระทบ: {b['icon']} {LEVEL_TH[b['icon']]} — ตัวเลขเศรษฐกิจมหภาค ขยับทั้งตลาด\n"
-                             f"{b['summary_en']}\nประกาศโดย BLS",
-                             s, s + timedelta(minutes=30), url="https://www.bls.gov/schedule/",
-                             alarm_min=15 if b["icon"] == HIGH else None))
+    # ----- ตัวเลขเศรษฐกิจ (CPI, NFP, PCE, GDP, PPI, Retail, JOLTS, ECI, ISM, Claims, Minutes)
+    for m in build_macro_events(start, end + timedelta(days=30), [d for d, _ in FOMC_DECISION_DAYS]):
+        lvl = m["level"]
+        desc = f"ผลกระทบ: {lvl} {LEVEL_TH[lvl]}\n{m['desc']}"
+        if m.get("allday"):
+            events.append(vevent(m["uid"], m["title"], desc, allday=m["allday"], url=m["url"]))
+        else:
+            s = m["start"]
+            events.append(vevent(m["uid"], m["title"], desc, s, s + timedelta(minutes=m["minutes"]),
+                                 url=m["url"], alarm_min=15 if lvl == HIGH else None))
 
     cal = "\r\n".join([
         "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//us-stock-calendar//TH",
