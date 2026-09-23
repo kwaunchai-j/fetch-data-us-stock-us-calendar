@@ -31,8 +31,24 @@ STATE_FILE = os.path.join(ROOT, "data", "reactions.json")
 API_KEY = os.environ.get("FINNHUB_API_KEY", "")
 DAYS_BACK = 10          # เก็บ event ย้อนหลัง (เพื่ออัปเดตผลงบ/ราคา)
 DAYS_AHEAD = 35         # ลง event ล่วงหน้า
-BIG_MOVE_PCT = 3.0      # ขยับเกินเท่านี้ถึงดึงข่าวมาแปะ
-USER_AGENT = "us-stock-calendar/1.0 (personal use)"
+BIG_MOVE_PCT = 2.0      # ขยับเกินเท่านี้ (🟡 ขึ้นไป) ถึงดึงข่าวมาแปะ
+USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) us-stock-calendar/1.1 (personal, non-commercial)"
+
+# ---------------------------------------------------------------- ระดับผลกระทบ
+# 🔴 สูง = ขยับทั้งตลาด / 🟡 กลาง = ขยับกลุ่มหรือหุ้นใหญ่ / 🟢 ต่ำ = เฉพาะตัว
+HIGH, MED, LOW = "🔴", "🟡", "🟢"
+LEVEL_TH = {HIGH: "สูง", MED: "กลาง", LOW: "ต่ำ"}
+# หลังประกาศงบแล้ว ใช้ % ราคาที่ขยับจริงแทนการคาดการณ์
+MOVE_HIGH_PCT = 5.0     # |ขยับ| >= 5%  -> 🔴
+MOVE_MED_PCT = 2.0      # |ขยับ| >= 2%  -> 🟡  (ต่ำกว่านั้น 🟢)
+# หุ้นที่น้ำหนักในดัชนีสูงมาก งบออกแล้วลากทั้ง S&P 500 / Nasdaq -> 🔴 ตั้งแต่ก่อนประกาศ
+INDEX_MOVERS = {"AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "META", "AVGO", "TSLA"}
+DAILY_MED_COUNT = 20    # สรุปงบรายวันที่มีบริษัท >= เท่านี้ -> 🟡
+
+
+def level_from_move(pct: float) -> str:
+    a = abs(pct)
+    return HIGH if a >= MOVE_HIGH_PCT else (MED if a >= MOVE_MED_PCT else LOW)
 
 # หุ้นใหญ่ที่จะแยกเป็น event ของตัวเอง (ที่เหลือใน S&P 500 จะรวมเป็นสรุปรายวัน)
 MEGA_CAPS = [
@@ -56,9 +72,9 @@ FOMC_DECISION_DAYS = [
 BLS_KEEP = [
     (r"Consumer Price Index", "CPI เงินเฟ้อ", "🔴"),
     (r"Employment Situation", "Non-farm Payrolls / ตัวเลขจ้างงาน", "🔴"),
-    (r"Producer Price Index", "PPI ราคาผู้ผลิต", "🟠"),
-    (r"Job Openings and Labor Turnover", "JOLTS ตำแหน่งงานว่าง", "🟠"),
-    (r"Employment Cost Index", "ECI ต้นทุนค่าจ้าง", "🟠"),
+    (r"Producer Price Index", "PPI ราคาผู้ผลิต", "🟡"),
+    (r"Job Openings and Labor Turnover", "JOLTS ตำแหน่งงานว่าง", "🟡"),
+    (r"Employment Cost Index", "ECI ต้นทุนค่าจ้าง", "🟡"),
 ]
 
 
@@ -280,15 +296,23 @@ def main() -> int:
 
         # ----- event รายตัว (หุ้นใหญ่)
         react = state.get(key)
-        title = f"💼 {sym} ประกาศงบ"
+        if react and react.get("pct") is not None:
+            level = level_from_move(react["pct"])
+            why = f"หุ้นขยับจริง {react['pct']:+.2f}% หลังประกาศงบ"
+        elif sym in INDEX_MOVERS:
+            level, why = HIGH, "หุ้นน้ำหนักสูงในดัชนี งบมีผลต่อทั้ง S&P 500 / Nasdaq"
+        else:
+            level, why = MED, "หุ้นขนาดใหญ่ มีผลต่อกลุ่มอุตสาหกรรม"
+        title = f"{level} {sym} ประกาศงบ"
         if tag:
-            title = f"💼 {sym} {tag} {spct:+.1f}%"
+            title = f"{level} {sym} {tag} {spct:+.1f}%"
         if react and react.get("pct") is not None:
             arrow = "🚀" if react["pct"] >= 0 else "🔻"
-            title += f" | หุ้น {arrow}{react['pct']:+.2f}%"
+            title += f" | {arrow}{react['pct']:+.2f}%"
 
         when = {"bmo": "ก่อนตลาดเปิด (BMO)", "amc": "หลังตลาดปิด (AMC)"}.get(hour, "ยังไม่ระบุเวลา")
-        d = [f"{name} ({sym}) — ไตรมาส Q{e.get('quarter')}/{e.get('year')}",
+        d = [f"ผลกระทบ: {level} {LEVEL_TH[level]} — {why}",
+             f"{name} ({sym}) — ไตรมาส Q{e.get('quarter')}/{e.get('year')}",
              f"เวลา: {when}",
              f"EPS คาด: {e.get('epsEstimate') if e.get('epsEstimate') is not None else '-'}"
              + (f" | จริง: {e['epsActual']}" if e.get("epsActual") is not None else ""),
@@ -299,20 +323,24 @@ def main() -> int:
             for n in react.get("news", []):
                 d.append(f"📰 {n['h']} — {n['s']}\n{n['u']}")
         url = f"https://finance.yahoo.com/quote/{sym.replace('.', '-')}"
+        alarm = 30 if level == HIGH and not react else None
 
         if hour == "bmo":
             s = datetime.combine(rdate, datetime.min.time(), ET).replace(hour=7)
-            events.append(vevent(key, title, "\n".join(d), s, s + timedelta(minutes=30), url=url))
+            events.append(vevent(key, title, "\n".join(d), s, s + timedelta(minutes=30), url=url, alarm_min=alarm))
         elif hour == "amc":
             s = datetime.combine(rdate, datetime.min.time(), ET).replace(hour=16, minute=5)
-            events.append(vevent(key, title, "\n".join(d), s, s + timedelta(minutes=30), url=url))
+            events.append(vevent(key, title, "\n".join(d), s, s + timedelta(minutes=30), url=url, alarm_min=alarm))
         else:
             events.append(vevent(key, title, "\n".join(d), allday=rdate, url=url))
 
     # ----- สรุปรายวันของ S&P 500 ที่เหลือ
     for d_, rows in sorted(daily.items()):
         rows.sort(key=lambda r: -(r.get("revenueEstimate") or 0))
-        lines = [f"บริษัทใน S&P 500 ที่ประกาศงบวันนี้ {len(rows)} ราย (เรียงตามรายได้คาด)", ""]
+        level = MED if len(rows) >= DAILY_MED_COUNT else LOW
+        why = "วันงบกระจุก หลายกลุ่มอุตสาหกรรม" if level == MED else "บริษัทขนาดกลาง ผลกระทบเฉพาะตัว"
+        lines = [f"ผลกระทบ: {level} {LEVEL_TH[level]} — {why}",
+                 f"บริษัทใน S&P 500 ที่ประกาศงบวันนี้ {len(rows)} ราย (เรียงตามรายได้คาด)", ""]
         for label, code in (("ก่อนตลาดเปิด (BMO)", "bmo"), ("หลังตลาดปิด (AMC)", "amc"), ("ไม่ระบุเวลา", "")):
             grp = [r for r in rows if (r.get("hour") or "").lower() == code
                    or (code == "" and (r.get("hour") or "").lower() not in ("bmo", "amc"))]
@@ -324,7 +352,7 @@ def main() -> int:
                 lines.append(f"{r['symbol']} {r['name']} | EPS คาด {r.get('epsEstimate', '-')}{res}")
             lines.append("")
         top = ", ".join(r["symbol"] for r in rows[:6])
-        events.append(vevent(f"sp500-daily:{d_}", f"📊 งบ S&P 500 ({len(rows)}): {top}",
+        events.append(vevent(f"sp500-daily:{d_}", f"{level} งบ S&P 500 ({len(rows)} บ.): {top}",
                              "\n".join(lines), allday=d_))
 
     # ----- FOMC
@@ -333,8 +361,9 @@ def main() -> int:
         if not (start <= d_ <= end + timedelta(days=60)):
             continue
         s = datetime.combine(d_, datetime.min.time(), ET).replace(hour=14)
-        title = "🏦 FOMC ประกาศดอกเบี้ย" + (" + Dot Plot" if sep else "")
-        desc = ("Fed ประกาศมติอัตราดอกเบี้ย 14:00 ET และแถลงข่าว 14:30 ET\n"
+        title = f"{HIGH} FOMC ประกาศดอกเบี้ย" + (" + Dot Plot" if sep else "")
+        desc = (f"ผลกระทบ: {HIGH} สูง — กำหนดทิศทางทั้งตลาด\n"
+                "Fed ประกาศมติอัตราดอกเบี้ย 14:00 ET และแถลงข่าว 14:30 ET\n"
                 + ("มี Summary of Economic Projections (dot plot)\n" if sep else "")
                 + "ผลกระทบสูงต่อทั้งตลาด (ดัชนี, bond yield, USD)")
         events.append(vevent(f"fomc:{ds}", title, desc, s, s + timedelta(minutes=60),
@@ -345,9 +374,10 @@ def main() -> int:
     for b in load_bls_events(start, end + timedelta(days=30)):
         s = b["dt"]
         events.append(vevent(f"bls:{utc(s)}:{b['name_th']}", f"{b['icon']} {b['name_th']}",
-                             f"{b['summary_en']}\nประกาศโดย BLS — ตัวเลขมหภาคที่ขยับตลาดทั้งกระดาน",
+                             f"ผลกระทบ: {b['icon']} {LEVEL_TH[b['icon']]} — ตัวเลขเศรษฐกิจมหภาค ขยับทั้งตลาด\n"
+                             f"{b['summary_en']}\nประกาศโดย BLS",
                              s, s + timedelta(minutes=30), url="https://www.bls.gov/schedule/",
-                             alarm_min=15))
+                             alarm_min=15 if b["icon"] == HIGH else None))
 
     cal = "\r\n".join([
         "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//us-stock-calendar//TH",
