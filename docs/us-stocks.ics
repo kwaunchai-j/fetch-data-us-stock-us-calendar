@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:QCOM:2026-11-04@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261104T210500Z
 DTEND:20261104T213500Z
 TRANSP:TRANSPARENT
@@ -23,7 +23,7 @@ URL:https://finance.yahoo.com/quote/QCOM
 END:VEVENT
 BEGIN:VEVENT
 UID:AMD:2026-11-02@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261102T210500Z
 DTEND:20261102T213500Z
 TRANSP:TRANSPARENT
@@ -37,7 +37,7 @@ URL:https://finance.yahoo.com/quote/AMD
 END:VEVENT
 BEGIN:VEVENT
 UID:PLTR:2026-11-02@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 TRANSP:TRANSPARENT
@@ -50,214 +50,213 @@ DESCRIPTION:ผลกระทบ: 🟡 กลาง — หุ้นข
 URL:https://finance.yahoo.com/quote/PLTR
 END:VEVENT
 BEGIN:VEVENT
-UID:ABBV:2026-10-29@us-stock-calendar
-DTSTAMP:20261001T021827Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
+UID:AAPL:2026-10-29@us-stock-calendar
+DTSTAMP:20261002T022943Z
+DTSTART:20261029T200500Z
+DTEND:20261029T203500Z
 TRANSP:TRANSPARENT
-SUMMARY:🟡 ABBV ประกาศงบ
-DESCRIPTION:ผลกระทบ: 🟡 กลาง — หุ้นข
- นาดใหญ่ มีผลต่อกลุ่มอุตส
- าหกรรม\nAbbVie (ABBV) — ไตรมาส Q3/2026\nเว
- ลา: ยังไม่ระบุเวลา\nEPS คาด: 3.921
- 3\nรายได้คาด: $17.65B
-URL:https://finance.yahoo.com/quote/ABBV
+SUMMARY:🔴 AAPL ประกาศงบ
+DESCRIPTION:ผลกระทบ: 🔴 สูง — หุ้นน้
+ ำหนักสูงในดัชนี งบมีผลต่
+ อทั้ง S&P 500 / Nasdaq\nApple Inc. (AAPL) — ไตรมา
+ ส Q4/2026\nเวลา: หลังตลาดปิด (AMC)\nEPS 
+ คาด: 2.0214\nรายได้คาด: $115.33B
+URL:https://finance.yahoo.com/quote/AAPL
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🔴 AAPL ประกาศงบ
+TRIGGER:-PT30M
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:LLY:2026-10-29@us-stock-calendar
-DTSTAMP:20261001T021827Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
+UID:AMZN:2026-10-29@us-stock-calendar
+DTSTAMP:20261002T022943Z
+DTSTART:20261029T200500Z
+DTEND:20261029T203500Z
 TRANSP:TRANSPARENT
-SUMMARY:🟡 LLY ประกาศงบ
-DESCRIPTION:ผลกระทบ: 🟡 กลาง — หุ้นข
- นาดใหญ่ มีผลต่อกลุ่มอุตส
- าหกรรม\nLilly (Eli) (LLY) — ไตรมาส Q3/2026\n
- เวลา: ยังไม่ระบุเวลา\nEPS คาด:
-  10.0278\nรายได้คาด: $22.59B
-URL:https://finance.yahoo.com/quote/LLY
-END:VEVENT
-BEGIN:VEVENT
-UID:MRK:2026-10-29@us-stock-calendar
-DTSTAMP:20261001T021827Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
-TRANSP:TRANSPARENT
-SUMMARY:🟡 MRK ประกาศงบ
-DESCRIPTION:ผลกระทบ: 🟡 กลาง — หุ้นข
- นาดใหญ่ มีผลต่อกลุ่มอุตส
- าหกรรม\nMerck & Co. (MRK) — ไตรมาส Q3/2026\n
- เวลา: ยังไม่ระบุเวลา\nEPS คาด:
-  2.2009\nรายได้คาด: $17.48B
-URL:https://finance.yahoo.com/quote/MRK
+SUMMARY:🔴 AMZN ประกาศงบ
+DESCRIPTION:ผลกระทบ: 🔴 สูง — หุ้นน้
+ ำหนักสูงในดัชนี งบมีผลต่
+ อทั้ง S&P 500 / Nasdaq\nAmazon (AMZN) — ไตรมาส Q
+ 3/2026\nเวลา: หลังตลาดปิด (AMC)\nEPS ค
+ าด: 1.9913\nรายได้คาด: $206.15B
+URL:https://finance.yahoo.com/quote/AMZN
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🔴 AMZN ประกาศงบ
+TRIGGER:-PT30M
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:sp500-daily:2026-10-29@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 TRANSP:TRANSPARENT
-SUMMARY:🟡 งบ S&P 500 (30 บ.): CI\, CHTR\, BMY\, PWR\, SNDK\, CMI
-DESCRIPTION:ผลกระทบ: 🟡 กลาง — วันงบ
- กระจุก หลายกลุ่มอุตสาหกร
- รม\nบริษัทใน S&P 500 ที่ประกาศง
- บวันนี้ 30 ราย (เรียงตามรายไ
- ด้คาด)\n\n— ก่อนตลาดเปิด (BMO) —\n
- CI Cigna | EPS คาด 7.7256\nPWR Quanta Services | EPS คาด 5.0
- 393\nCMI Cummins | EPS คาด 8.3282\nLIN Linde plc | EPS คาด 4
- .5614\nDUK Duke Energy | EPS คาด 1.8655\nLYB LyondellBasell | EPS 
- คาด 2.6625\nMAR Marriott International | EPS คาด 2.8524\nMO 
- Altria | EPS คาด 1.5532\nAON Aon plc | EPS คาด 3.3881\nTROW 
- T. Rowe Price | EPS คาด 2.7407\nARES Ares Management | EPS คา
- ด 1.359\nKIM Kimco Realty | EPS คาด 0.2058\n\n— หลัง
- ตลาดปิด (AMC) —\nLYV Live Nation Entertainment | EPS ค
- าด 1.5852\nDHI D. R. Horton | EPS คาด 3.067\nSYK Stryker Corpo
- ration | EPS คาด 3.6052\nAMP Ameriprise Financial | EPS คาด 
- 11.8998\nED Consolidated Edison | EPS คาด 2.0901\nRSG Republic Ser
- vices | EPS คาด 1.9455\nLNT Alliant Energy | EPS คาด 1.2368\
- nSWKS Skyworks Solutions | EPS คาด 1.2982\nREG Regency Centers | E
- PS คาด 0.6123\nFRT Federal Realty Investment Trust | EPS คาด
-  0.739\n\n— ไม่ระบุเวลา —\nCHTR Charter Commun
- ications | EPS คาด 10.0047\nBMY Bristol Myers Squibb | EPS คา
- ด 1.742\nSNDK Sandisk | EPS คาด 47.0581\nPH Parker Hannifin | EP
- S คาด 8.4127\nBALL Ball Corporation | EPS คาด 1.0843\nMSI Mo
- torola Solutions | EPS คาด 4.4611\nBAX Baxter International | EPS 
- คาด 0.5238\nPPL PPL Corporation | EPS คาด 0.5319\n
-END:VEVENT
-BEGIN:VEVENT
-UID:sp500-daily:2026-10-30@us-stock-calendar
-DTSTAMP:20261001T021827Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-TRANSP:TRANSPARENT
-SUMMARY:🟢 งบ S&P 500 (8 บ.): CAH\, CL\, D\, REGN\, SRE\, PNW
+SUMMARY:🟢 งบ S&P 500 (19 บ.): CI\, BMY\, CMI\, DHI\, DUK\, AMP
 DESCRIPTION:ผลกระทบ: 🟢 ต่ำ — บริษัท
  ขนาดกลาง ผลกระทบเฉพาะตัว\n
  บริษัทใน S&P 500 ที่ประกาศงบวั
- นนี้ 8 ราย (เรียงตามรายได้ค
+ นนี้ 19 ราย (เรียงตามรายได้ค
+ าด)\n\n— ก่อนตลาดเปิด (BMO) —\nCI Cigna 
+ | EPS คาด 7.7256\nCMI Cummins | EPS คาด 8.3282\nDUK Duke Ene
+ rgy | EPS คาด 1.8655\nAON Aon plc | EPS คาด 3.3881\nARES Are
+ s Management | EPS คาด 1.359\n\n— หลังตลาดปิ
+ ด (AMC) —\nDHI D. R. Horton | EPS คาด 3.067\nAMP Ameriprise Fi
+ nancial | EPS คาด 11.8998\nED Consolidated Edison | EPS คาด 
+ 2.0901\nFTNT Fortinet | EPS คาด 0.8728\nGDDY GoDaddy | EPS คา
+ ด 1.882\nFSLR First Solar | EPS คาด 4.7415\nCOIN Coinbase | EPS 
+ คาด -0.1106\nBE Bloom Energy | EPS คาด 0.6889\nFRT Federal R
+ ealty Investment Trust | EPS คาด 0.739\n\n— ไม่ระบ
+ ุเวลา —\nBMY Bristol Myers Squibb | EPS คาด 1.742\nEXP
+ E Expedia Group | EPS คาด 9.0364\nFOXA Fox Corporation (Class A) |
+  EPS คาด 2.1407\nBALL Ball Corporation | EPS คาด 1.0843\nBAX
+  Baxter International | EPS คาด 0.5238\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-10-30@us-stock-calendar
+DTSTAMP:20261002T022943Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+TRANSP:TRANSPARENT
+SUMMARY:🟢 งบ S&P 500 (9 บ.): CAH\, CHTR\, CL\, D\, REGN\, SRE
+DESCRIPTION:ผลกระทบ: 🟢 ต่ำ — บริษัท
+ ขนาดกลาง ผลกระทบเฉพาะตัว\n
+ บริษัทใน S&P 500 ที่ประกาศงบวั
+ นนี้ 9 ราย (เรียงตามรายได้ค
  าด)\n\n— ก่อนตลาดเปิด (BMO) —\nCL Colgat
  e-Palmolive | EPS คาด 0.9582\nD Dominion Energy | EPS คาด 1.
  2189\nSRE Sempra | EPS คาด 1.1396\nCHD Church & Dwight | EPS ค
  าด 0.9077\nCBOE Cboe Global Markets | EPS คาด 3.5017\n\n— 
  ไม่ระบุเวลา —\nCAH Cardinal Health | EPS คา
- ด 2.9659\nREGN Regeneron Pharmaceuticals | EPS คาด 16.1712\nPNW 
- Pinnacle West Capital | EPS คาด 3.1792\n
+ ด 2.9659\nCHTR Charter Communications | EPS คาด 10.0047\nREGN Re
+ generon Pharmaceuticals | EPS คาด 16.1712\nPNW Pinnacle West Capit
+ al | EPS คาด 3.1792\n
 END:VEVENT
 BEGIN:VEVENT
 UID:sp500-daily:2026-11-02@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 TRANSP:TRANSPARENT
-SUMMARY:🟡 งบ S&P 500 (44 บ.): PGR\, ADM\, PFE\, SMCI\, UBER\, AM
- GN
+SUMMARY:🟡 งบ S&P 500 (42 บ.): PGR\, PFE\, SMCI\, AMGN\, ETN\, AI
+ G
 DESCRIPTION:ผลกระทบ: 🟡 กลาง — วันงบ
  กระจุก หลายกลุ่มอุตสาหกร
  รม\nบริษัทใน S&P 500 ที่ประกาศง
- บวันนี้ 44 ราย (เรียงตามรายไ
+ บวันนี้ 42 ราย (เรียงตามรายไ
  ด้คาด)\n\n— ก่อนตลาดเปิด (BMO) —\n
- PGR Progressive Corporation | EPS คาด 4.2318\nADM Archer Daniels M
- idland | EPS คาด 1.5814\nUBER Uber | EPS คาด 0.9745\nETN Eat
- on Corporation | EPS คาด 3.5612\nEXC Exelon | EPS คาด 0.8177
- \nCDW CDW Corporation | EPS คาด 2.988\nKVUE Kenvue | EPS คาด
-  0.3008\nHSIC Henry Schein | EPS คาด 1.3809\nPEG Public Service En
- terprise Group | EPS คาด 1.1796\nGPN Global Payments | EPS คา
- ด 3.6167\nNCLH Norwegian Cruise Line Holdings | EPS คาด 0.9144\n
- WMB Williams Companies | EPS คาด 0.5397\nYUM Yum! Brands | EPS ค
- าด 1.5913\nWAT Waters Corporation | EPS คาด 4.0366\nON ON Semi
- conductor | EPS คาด 0.9007\nIT Gartner | EPS คาด 2.922\nIDXX
-  Idexx Laboratories | EPS คาด 3.8024\nDDOG Datadog | EPS คาด
-  0.6649\n\n— หลังตลาดปิด (AMC) —\nAMGN Amgen |
-  EPS คาด 5.902\nAIG American International Group | EPS คาด 1
- .8226\nJCI Johnson Controls | EPS คาด 1.597\nBDX Becton Dickinson 
- | EPS คาด 4.1064\nFANG Diamondback Energy | EPS คาด 4.9227\n
- ANET Arista Networks | EPS คาด 1.0953\nES Eversource Energy | EPS 
- คาด 1.0461\nCTVA Corteva | EPS คาด -0.4046\nIFF Internationa
- l Flavors & Fragrances | EPS คาด 0.8001\nO Realty Income | EPS ค
- าด 0.4284\nCPAY Corpay | EPS คาด 7.3312\nLITE Lumentum | EPS 
- คาด 4.2722\n\n— ไม่ระบุเวลา —\nPFE Pfize
- r | EPS คาด 0.7535\nSMCI Supermicro | EPS คาด 1.0553\nLDOS L
- eidos | EPS คาด 3.1003\nEL Estée Lauder Companies (The) | EPS ค
- าด 0.5256\nAIZ Assurant | EPS คาด 4.5695\nAES AES Corporation 
- | EPS คาด 0.7368\nVRTX Vertex Pharmaceuticals | EPS คาด 4.89
- 17\nMLM Martin Marietta Materials | EPS คาด 6.7067\nCLX Clorox | E
- PS คาด 1.1226\nBR Broadridge Financial Solutions | EPS คาด 1
- .4098\nSPG Simon Property Group | EPS คาด 1.6901\nAXON Axon Enterp
- rise | EPS คาด 1.9487\nSBAC SBA Communications | EPS คาด 2.1
- 608\nL Loews Corporation | EPS คาด None\n
+ PGR Progressive Corporation | EPS คาด 4.2318\nETN Eaton Corporatio
+ n | EPS คาด 3.5612\nEXC Exelon | EPS คาด 0.8177\nCDW CDW Cor
+ poration | EPS คาด 2.988\nKVUE Kenvue | EPS คาด 0.3008\nHSIC
+  Henry Schein | EPS คาด 1.3809\nPEG Public Service Enterprise Grou
+ p | EPS คาด 1.1796\nGPN Global Payments | EPS คาด 3.6167\nNC
+ LH Norwegian Cruise Line Holdings | EPS คาด 0.9144\nWMB Williams C
+ ompanies | EPS คาด 0.5397\nYUM Yum! Brands | EPS คาด 1.5913\
+ nWAT Waters Corporation | EPS คาด 4.0366\nON ON Semiconductor | EP
+ S คาด 0.9007\nIT Gartner | EPS คาด 2.922\nIDXX Idexx Laborat
+ ories | EPS คาด 3.8024\nDDOG Datadog | EPS คาด 0.6649\n\n—
+  หลังตลาดปิด (AMC) —\nAMGN Amgen | EPS คาด
+  5.902\nAIG American International Group | EPS คาด 1.8226\nJCI Joh
+ nson Controls | EPS คาด 1.597\nBDX Becton Dickinson | EPS คา
+ ด 4.1064\nFANG Diamondback Energy | EPS คาด 4.9227\nANET Arista 
+ Networks | EPS คาด 1.0953\nES Eversource Energy | EPS คาด 1.
+ 0461\nCTVA Corteva | EPS คาด -0.4046\nIFF International Flavors & 
+ Fragrances | EPS คาด 0.8001\nO Realty Income | EPS คาด 0.428
+ 4\nCPAY Corpay | EPS คาด 7.3312\nLITE Lumentum | EPS คาด 4.2
+ 722\n\n— ไม่ระบุเวลา —\nPFE Pfizer | EPS ค
+ าด 0.7535\nSMCI Supermicro | EPS คาด 1.0553\nLDOS Leidos | EPS
+  คาด 3.1003\nEL Estée Lauder Companies (The) | EPS คาด 0.52
+ 56\nAIZ Assurant | EPS คาด 4.5695\nAES AES Corporation | EPS ค
+ าด 0.7368\nVRTX Vertex Pharmaceuticals | EPS คาด 4.8917\nMLM M
+ artin Marietta Materials | EPS คาด 6.7067\nCLX Clorox | EPS คา
+ ด 1.1226\nBR Broadridge Financial Solutions | EPS คาด 1.4098\nSP
+ G Simon Property Group | EPS คาด 1.6901\nAXON Axon Enterprise | EP
+ S คาด 1.9487\nSBAC SBA Communications | EPS คาด 2.1608\nL Lo
+ ews Corporation | EPS คาด None\n
 END:VEVENT
 BEGIN:VEVENT
 UID:sp500-daily:2026-11-03@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 TRANSP:TRANSPARENT
-SUMMARY:🟡 งบ S&P 500 (33 บ.): MCK\, COR\, MPC\, BG\, MET\, CRH
+SUMMARY:🟡 งบ S&P 500 (30 บ.): MCK\, COR\, MPC\, BG\, MET\, CRH
 DESCRIPTION:ผลกระทบ: 🟡 กลาง — วันงบ
  กระจุก หลายกลุ่มอุตสาหกร
  รม\nบริษัทใน S&P 500 ที่ประกาศง
- บวันนี้ 33 ราย (เรียงตามรายไ
+ บวันนี้ 30 ราย (เรียงตามรายไ
  ด้คาด)\n\n— ก่อนตลาดเปิด (BMO) —\n
  MPC Marathon Petroleum | EPS คาด 22.1896\nBG Bunge Global | EPS 
- คาด 2.5588\nAPO Apollo Global Management | EPS คาด 2.2835\nT
- RGP Targa Resources | EPS คาด 2.7352\nFIS Fidelity National Inform
- ation Services | EPS คาด 1.6185\nZBH Zimmer Biomet | EPS คาด
-  1.9015\nIRM Iron Mountain | EPS คาด 0.6161\nZBRA Zebra Technologi
- es | EPS คาด 4.9984\nCRL Charles River Laboratories | EPS คา
- ด 2.9927\n\n— หลังตลาดปิด (AMC) —\nCOR Cenco
- ra | EPS คาด 4.6163\nMET MetLife | EPS คาด 2.6634\nDVN Devon
-  Energy | EPS คาด 1.2507\nEMR Emerson Electric | EPS คาด 1.8
- 676\nDASH DoorDash | EPS คาด 0.8694\nMOS Mosaic Company (The) | EP
- S คาด 0.05\nAPA APA Corporation | EPS คาด 1.3512\nFTNT Forti
- net | EPS คาด 0.8728\nAPP AppLovin | EPS คาด 4.0817\nALB Alb
- emarle Corporation | EPS คาด 2.5908\nHOOD Robinhood Markets | EPS 
- คาด 0.5344\nATO Atmos Energy | EPS คาด 1.151\nFICO Fair Isaa
- c | EPS คาด 11.2248\n\n— ไม่ระบุเวลา —\n
- MCK McKesson Corporation | EPS คาด 10.7963\nCRH CRH plc | EPS ค
- าด 2.2968\nAMCR Amcor | EPS คาด 1.0265\nEXPD Expeditors Intern
- ational | EPS คาด 2.1763\nAEE Ameren | EPS คาด 2.3213\nCOHR 
- Coherent Corp. | EPS คาด 2.0003\nSTE Steris | EPS คาด 2.705\
- nTKO TKO Group Holdings | EPS คาด 1.3506\nTRMB Trimble Inc. | EPS 
- คาด 0.8778\nTECH Bio-Techne | EPS คาด 0.4495\nTPL Texas Paci
- fic Land Corporation | EPS คาด 2.3786\n
+ คาด 2.5588\nAPO Apollo Global Management | EPS คาด 2.2835\nF
+ IS Fidelity National Information Services | EPS คาด 1.6185\nZBH Zi
+ mmer Biomet | EPS คาด 1.9015\nZBRA Zebra Technologies | EPS คา
+ ด 4.9984\nCRL Charles River Laboratories | EPS คาด 2.9927\n\n—
+  หลังตลาดปิด (AMC) —\nCOR Cencora | EPS คา
+ ด 4.6163\nMET MetLife | EPS คาด 2.6634\nDVN Devon Energy | EPS 
+ คาด 1.2507\nEMR Emerson Electric | EPS คาด 1.8676\nDASH Door
+ Dash | EPS คาด 0.8694\nMOS Mosaic Company (The) | EPS คาด 0.
+ 05\nAPA APA Corporation | EPS คาด 1.3512\nAPP AppLovin | EPS ค
+ าด 4.0817\nALB Albemarle Corporation | EPS คาด 2.5908\nHOOD Ro
+ binhood Markets | EPS คาด 0.5344\nATO Atmos Energy | EPS คาด
+  1.151\nFICO Fair Isaac | EPS คาด 11.2248\n\n— ไม่ระ
+ บุเวลา —\nMCK McKesson Corporation | EPS คาด 10.7963
+ \nCRH CRH plc | EPS คาด 2.2968\nAMCR Amcor | EPS คาด 1.0265\
+ nEXPD Expeditors International | EPS คาด 2.1763\nAEE Ameren | EPS 
+ คาด 2.3213\nCOHR Coherent Corp. | EPS คาด 2.0003\nSTE Steris
+  | EPS คาด 2.705\nTKO TKO Group Holdings | EPS คาด 1.3506\nT
+ RMB Trimble Inc. | EPS คาด 0.8778\nTECH Bio-Techne | EPS คาด
+  0.4495\nTPL Texas Pacific Land Corporation | EPS คาด 2.3786\n
 END:VEVENT
 BEGIN:VEVENT
 UID:sp500-daily:2026-11-04@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 TRANSP:TRANSPARENT
-SUMMARY:🟡 งบ S&P 500 (32 บ.): COP\, ALL\, CEG\, NRG\, WBD\, EOG
+SUMMARY:🟡 งบ S&P 500 (29 บ.): COP\, ALL\, CEG\, NRG\, WBD\, EOG
 DESCRIPTION:ผลกระทบ: 🟡 กลาง — วันงบ
  กระจุก หลายกลุ่มอุตสาหกร
  รม\nบริษัทใน S&P 500 ที่ประกาศง
- บวันนี้ 32 ราย (เรียงตามรายไ
+ บวันนี้ 29 ราย (เรียงตามรายไ
  ด้คาด)\n\n— ก่อนตลาดเปิด (BMO) —\n
  COP ConocoPhillips | EPS คาด 2.5988\nWBD Warner Bros. Discovery | 
- EPS คาด -0.0201\nMRNA Moderna | EPS คาด -1.3032\n\n— ห
- ลังตลาดปิด (AMC) —\nALL Allstate | EPS คาด 6
- .5179\nEOG EOG Resources | EPS คาด 4.1626\nXYZ Block\, Inc. | EPS 
- คาด 1.0326\nABNB Airbnb | EPS คาด 2.9161\nAFL Aflac | EPS 
- คาด 1.808\nAPD Air Products | EPS คาด 3.6472\nROK Rockwell A
- utomation | EPS คาด 3.7366\nWYNN Wynn Resorts | EPS คาด 0.99
- 46\nCF CF Industries | EPS คาด 2.987\nMCHP Microchip Technology | 
- EPS คาด 0.9468\nAKAM Akamai Technologies | EPS คาด 1.705\nMT
- D Mettler Toledo | EPS คาด 12.2293\nPTC PTC Inc. | EPS คาด 1
- .9856\n\n— ไม่ระบุเวลา —\nCEG Constellation En
- ergy | EPS คาด 3.8218\nNRG NRG Energy | EPS คาด 3.6514\nGWW 
- W. W. Grainger | EPS คาด 11.7717\nEXPE Expedia Group | EPS คา
- ด 9.0364\nVTRS Viatris | EPS คาด 0.6522\nECHO EchoStar | EPS ค
- าด 0.0714\nNWSA News Corp (Class A) | EPS คาด 0.2618\nRL Ralph
-  Lauren Corporation | EPS คาด 4.3522\nSOLV Solventum | EPS คา
- ด 1.3816\nEVRG Evergy | EPS คาด 2.2166\nDD DuPont | EPS คา
- ด 1.926\nTPR Tapestry\, Inc. | EPS คาด 1.5738\nTTWO Take-Two Int
- eractive | EPS คาด 0.9632\nHST Host Hotels & Resorts | EPS คา
- ด 0.097\nGEN Gen Digital | EPS คาด 0.725\nPODD Insulet Corporati
- on | EPS คาด 1.6211\n
+ EPS คาด -0.0201\n\n— หลังตลาดปิด (AMC) —
+ \nALL Allstate | EPS คาด 6.5179\nEOG EOG Resources | EPS คาด
+  4.1626\nXYZ Block\, Inc. | EPS คาด 1.0326\nABNB Airbnb | EPS ค
+ าด 2.9161\nAFL Aflac | EPS คาด 1.808\nAPD Air Products | EPS 
+ คาด 3.6472\nROK Rockwell Automation | EPS คาด 3.7366\nWYNN W
+ ynn Resorts | EPS คาด 0.9946\nCF CF Industries | EPS คาด 2.9
+ 87\nMCHP Microchip Technology | EPS คาด 0.9468\nAKAM Akamai Techno
+ logies | EPS คาด 1.705\nMTD Mettler Toledo | EPS คาด 12.2293
+ \nPTC PTC Inc. | EPS คาด 1.9856\n\n— ไม่ระบุเว
+ ลา —\nCEG Constellation Energy | EPS คาด 3.8218\nNRG NRG Ene
+ rgy | EPS คาด 3.6514\nGWW W. W. Grainger | EPS คาด 11.7717\n
+ VTRS Viatris | EPS คาด 0.6522\nECHO EchoStar | EPS คาด 0.071
+ 4\nNWSA News Corp (Class A) | EPS คาด 0.2618\nRL Ralph Lauren Corp
+ oration | EPS คาด 4.3522\nSOLV Solventum | EPS คาด 1.3816\nE
+ VRG Evergy | EPS คาด 2.2166\nDD DuPont | EPS คาด 1.926\nTPR 
+ Tapestry\, Inc. | EPS คาด 1.5738\nTTWO Take-Two Interactive | EPS 
+ คาด 0.9632\nHST Host Hotels & Resorts | EPS คาด 0.097\nGEN G
+ en Digital | EPS คาด 0.725\n
+END:VEVENT
+BEGIN:VEVENT
+UID:sp500-daily:2026-11-05@us-stock-calendar
+DTSTAMP:20261002T022943Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+TRANSP:TRANSPARENT
+SUMMARY:🟢 งบ S&P 500 (1 บ.): ZTS
+DESCRIPTION:ผลกระทบ: 🟢 ต่ำ — บริษัท
+ ขนาดกลาง ผลกระทบเฉพาะตัว\n
+ บริษัทใน S&P 500 ที่ประกาศงบวั
+ นนี้ 1 ราย (เรียงตามรายได้ค
+ าด)\n\n— ก่อนตลาดเปิด (BMO) —\nZTS Zoeti
+ s | EPS คาด 1.5291\n
 END:VEVENT
 BEGIN:VEVENT
 UID:fomc:2026-10-28@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261028T180000Z
 DTEND:20261028T190000Z
 TRANSP:TRANSPARENT
@@ -276,7 +275,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:fomc:2026-12-09@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261209T190000Z
 DTEND:20261209T200000Z
 TRANSP:TRANSPARENT
@@ -297,7 +296,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:cpi:2026-10-14@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261014T123000Z
 DTEND:20261014T130000Z
 TRANSP:TRANSPARENT
@@ -317,7 +316,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:cpi:2026-11-10@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261110T133000Z
 DTEND:20261110T140000Z
 TRANSP:TRANSPARENT
@@ -337,7 +336,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:nfp:2026-10-02@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261002T123000Z
 DTEND:20261002T130000Z
 TRANSP:TRANSPARENT
@@ -359,7 +358,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:nfp:2026-11-06@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261106T133000Z
 DTEND:20261106T140000Z
 TRANSP:TRANSPARENT
@@ -381,7 +380,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:nfp:2026-12-04@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261204T133000Z
 DTEND:20261204T140000Z
 TRANSP:TRANSPARENT
@@ -402,8 +401,24 @@ TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:macro:update:nfp:2026-12-04@us-stock-calendar
+DTSTAMP:20261002T022943Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+TRANSP:TRANSPARENT
+SUMMARY:⚠️ เพิ่มวันประกาศ Non-farm Payrol
+ ls / อัตราว่างงาน ปีถัดไปใน ma
+ cro_events.py
+DESCRIPTION:ผลกระทบ: 🟢 ต่ำ\nตาราง Non-fa
+ rm Payrolls / อัตราว่างงาน ในสคริป
+ ต์หมดที่ 2026-12-04\nดูวันใหม่ที
+ ่ https://www.bls.gov/ces/\nแล้วเพิ่มลงใน SC
+ HEDULED ของ macro_events.py
+URL:https://www.bls.gov/ces/
+END:VEVENT
+BEGIN:VEVENT
 UID:macro:pce:2026-09-30@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20260930T123000Z
 DTEND:20260930T130000Z
 TRANSP:TRANSPARENT
@@ -426,7 +441,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:pce:2026-10-29@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261029T123000Z
 DTEND:20261029T130000Z
 TRANSP:TRANSPARENT
@@ -449,7 +464,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:pce:2026-11-25@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261125T133000Z
 DTEND:20261125T140000Z
 TRANSP:TRANSPARENT
@@ -472,7 +487,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:gdp:2026-09-30@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20260930T123000Z
 DTEND:20260930T130000Z
 TRANSP:TRANSPARENT
@@ -487,7 +502,7 @@ URL:https://www.bea.gov/data/gdp/gross-domestic-product
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:gdp:2026-10-29@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261029T123000Z
 DTEND:20261029T130000Z
 TRANSP:TRANSPARENT
@@ -506,7 +521,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:gdp:2026-11-25@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261125T133000Z
 DTEND:20261125T140000Z
 TRANSP:TRANSPARENT
@@ -521,7 +536,7 @@ URL:https://www.bea.gov/data/gdp/gross-domestic-product
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:ppi:2026-10-15@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261015T123000Z
 DTEND:20261015T130000Z
 TRANSP:TRANSPARENT
@@ -535,7 +550,7 @@ URL:https://www.bls.gov/ppi/
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:ppi:2026-11-13@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261113T133000Z
 DTEND:20261113T140000Z
 TRANSP:TRANSPARENT
@@ -549,7 +564,7 @@ URL:https://www.bls.gov/ppi/
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:retail:2026-10-15@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261015T123000Z
 DTEND:20261015T130000Z
 TRANSP:TRANSPARENT
@@ -563,7 +578,7 @@ URL:https://www.census.gov/retail/index.html
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:retail:2026-11-17@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261117T133000Z
 DTEND:20261117T140000Z
 TRANSP:TRANSPARENT
@@ -577,7 +592,7 @@ URL:https://www.census.gov/retail/index.html
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:jolts:2026-09-29@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20260929T140000Z
 DTEND:20260929T143000Z
 TRANSP:TRANSPARENT
@@ -591,7 +606,7 @@ URL:https://www.bls.gov/jlt/
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:jolts:2026-11-03@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261103T150000Z
 DTEND:20261103T153000Z
 TRANSP:TRANSPARENT
@@ -605,7 +620,7 @@ URL:https://www.bls.gov/jlt/
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:jolts:2026-12-01@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261201T150000Z
 DTEND:20261201T153000Z
 TRANSP:TRANSPARENT
@@ -619,7 +634,7 @@ URL:https://www.bls.gov/jlt/
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:update:jolts:2026-12-01@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 TRANSP:TRANSPARENT
@@ -635,7 +650,7 @@ URL:https://www.bls.gov/jlt/
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:eci:2026-10-30@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261030T123000Z
 DTEND:20261030T130000Z
 TRANSP:TRANSPARENT
@@ -649,7 +664,7 @@ URL:https://www.bls.gov/eci/
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:update:eci:2026-10-30@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 TRANSP:TRANSPARENT
@@ -665,7 +680,7 @@ URL:https://www.bls.gov/eci/
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:ism-mfg:2026-10-01@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261001T140000Z
 DTEND:20261001T143000Z
 TRANSP:TRANSPARENT
@@ -681,7 +696,7 @@ URL:https://www.ismworld.org/supply-management-news-and-reports/reports/i
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:ism-svc:2026-10-05@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261005T140000Z
 DTEND:20261005T143000Z
 TRANSP:TRANSPARENT
@@ -697,7 +712,7 @@ URL:https://www.ismworld.org/supply-management-news-and-reports/reports/i
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:ism-mfg:2026-11-02@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261102T150000Z
 DTEND:20261102T153000Z
 TRANSP:TRANSPARENT
@@ -713,7 +728,7 @@ URL:https://www.ismworld.org/supply-management-news-and-reports/reports/i
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:ism-svc:2026-11-04@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261104T150000Z
 DTEND:20261104T153000Z
 TRANSP:TRANSPARENT
@@ -729,7 +744,7 @@ URL:https://www.ismworld.org/supply-management-news-and-reports/reports/i
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:ism-mfg:2026-12-01@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261201T150000Z
 DTEND:20261201T153000Z
 TRANSP:TRANSPARENT
@@ -745,7 +760,7 @@ URL:https://www.ismworld.org/supply-management-news-and-reports/reports/i
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:ism-svc:2026-12-03@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261203T150000Z
 DTEND:20261203T153000Z
 TRANSP:TRANSPARENT
@@ -761,7 +776,7 @@ URL:https://www.ismworld.org/supply-management-news-and-reports/reports/i
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-09-24@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20260924T123000Z
 DTEND:20260924T124500Z
 TRANSP:TRANSPARENT
@@ -776,7 +791,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-10-01@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261001T123000Z
 DTEND:20261001T124500Z
 TRANSP:TRANSPARENT
@@ -791,7 +806,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-10-08@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261008T123000Z
 DTEND:20261008T124500Z
 TRANSP:TRANSPARENT
@@ -806,7 +821,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-10-15@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261015T123000Z
 DTEND:20261015T124500Z
 TRANSP:TRANSPARENT
@@ -821,7 +836,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-10-22@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261022T123000Z
 DTEND:20261022T124500Z
 TRANSP:TRANSPARENT
@@ -836,7 +851,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-10-29@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261029T123000Z
 DTEND:20261029T124500Z
 TRANSP:TRANSPARENT
@@ -851,7 +866,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-11-05@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261105T133000Z
 DTEND:20261105T134500Z
 TRANSP:TRANSPARENT
@@ -866,7 +881,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-11-12@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261112T133000Z
 DTEND:20261112T134500Z
 TRANSP:TRANSPARENT
@@ -881,7 +896,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-11-19@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261119T133000Z
 DTEND:20261119T134500Z
 TRANSP:TRANSPARENT
@@ -896,7 +911,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-11-26@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261125T133000Z
 DTEND:20261125T134500Z
 TRANSP:TRANSPARENT
@@ -911,7 +926,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:claims:2026-12-03@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261203T133000Z
 DTEND:20261203T134500Z
 TRANSP:TRANSPARENT
@@ -926,7 +941,7 @@ URL:https://www.dol.gov/ui/data.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:macro:fomc-minutes:2026-11-18@us-stock-calendar
-DTSTAMP:20261001T021827Z
+DTSTAMP:20261002T022943Z
 DTSTART:20261118T190000Z
 DTEND:20261118T193000Z
 TRANSP:TRANSPARENT
