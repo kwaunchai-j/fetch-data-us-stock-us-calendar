@@ -1,1 +1,24 @@
-{}
+{
+ "CSCO:2026-11-12": {
+  "close": 95.64,
+  "pct": -6.2445,
+  "session": "2026-11-13",
+  "news": [
+   {
+    "h": "Stock Market Today: Indexes Trim Losses, Manage To Score Weekly Gains Despite Strong Volatility",
+    "u": "https://finnhub.io/api/news?id=151dacea4fb01da21ba22fb4ef780e793df7e558bbc22db74fe00e4bc4c94eaf",
+    "s": "Yahoo"
+   },
+   {
+    "h": "Nvidia, AMD, Microsoft, Broadcom, and More Stocks That Explain Today’s Market",
+    "u": "https://finnhub.io/api/news?id=7db602bc5fe84056199669b958ff9fddd0795006b0539166c5c7f7abd27f8bda",
+    "s": "Yahoo"
+   },
+   {
+    "h": "Nasdaq Drops Friday But Ends the Week Up: Stock Market Today",
+    "u": "https://finnhub.io/api/news?id=987c5ed2e96aa2ddced57eb5c5ebf9156c6f28142b2985c31cbc9e00c674efb6",
+    "s": "Yahoo"
+   }
+  ]
+ }
+}
