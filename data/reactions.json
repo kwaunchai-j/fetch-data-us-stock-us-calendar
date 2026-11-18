@@ -20,5 +20,32 @@
     "s": "Yahoo"
    }
   ]
+ },
+ "DIS:2026-11-17": {
+  "close": 116.94,
+  "pct": -1.4827,
+  "session": "2026-11-17"
+ },
+ "HD:2026-11-17": {
+  "close": 339.01,
+  "pct": -2.446,
+  "session": "2026-11-17",
+  "news": [
+   {
+    "h": "Home Depot: 3 Key Takeaways for Long-Term Investors",
+    "u": "https://finnhub.io/api/news?id=9b2d1a54735386e2ba36114ccc2e6aafb69c4ae2dfedfb01876d0f8b7bb7864f",
+    "s": "Yahoo"
+   },
+   {
+    "h": "Lowe’s Steps Up to the Plate After Home Depot Defies Housing Slump",
+    "u": "https://finnhub.io/api/news?id=454f242f6a9ef294d0d6eb2983feb4b843a92be7140a03b266fa66643652ad64",
+    "s": "Yahoo"
+   },
+   {
+    "h": "Jim Cramer Says Home Depot Beat but Gave a ‘Tepid’ Forecast. Why He Calls It a Rate Stock",
+    "u": "https://finnhub.io/api/news?id=a8807aff2aabe0ab610bb2328f9f763c7c99a5835abcf44c93669a45f0580653",
+    "s": "Yahoo"
+   }
+  ]
  }
 }
