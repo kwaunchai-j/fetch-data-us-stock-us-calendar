@@ -47,5 +47,27 @@
     "s": "Yahoo"
    }
   ]
+ },
+ "NVDA:2026-11-17": {
+  "close": 150.96,
+  "pct": -2.8946,
+  "session": "2026-11-18",
+  "news": [
+   {
+    "h": "Is Alphabet Stock a Buy Right Now?",
+    "u": "https://finnhub.io/api/news?id=2234e0615b13f07c48437e0ea2d68109375a1b7074216d15671c4f60776504b5",
+    "s": "Yahoo"
+   },
+   {
+    "h": "Prediction: This Will Be Sandisk’s Stock Price by the End of 2027",
+    "u": "https://finnhub.io/api/news?id=eb88a1adcea99d1c24ed2ecfada0590e6ceb4c4a7af0ca1eb9df1b75c76ae0db",
+    "s": "Yahoo"
+   },
+   {
+    "h": "What Explains Natera Stock's Nearly 10% Drop?",
+    "u": "https://finnhub.io/api/news?id=33f398512f2b91ed800438674dc8d00bb6737ebf7943f826eef582020bf2df17",
+    "s": "Yahoo"
+   }
+  ]
  }
 }
