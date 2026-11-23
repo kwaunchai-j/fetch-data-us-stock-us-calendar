@@ -74,5 +74,27 @@
   "close": 126.04,
   "pct": -1.0364,
   "session": "2026-11-19"
+ },
+ "INTU:2026-11-19": {
+  "close": 270.44,
+  "pct": -12.7669,
+  "session": "2026-11-20",
+  "news": [
+   {
+    "h": "Intuit (INTU) Stock Price Slides As Q1 Results Meet Slower Growth Fears",
+    "u": "https://finnhub.io/api/news?id=e8fe9da4e8ac803b31e270ee69d7fa393d63db814406e3d68f0a1eb08c18edb9",
+    "s": "Yahoo"
+   },
+   {
+    "h": "Intuit Sinks 13% on Revenue Guidance Cut as CEO Calls AI Tools “New Front Doors for Discovery”",
+    "u": "https://finnhub.io/api/news?id=0a16a029a715f515fa075037007c50e25428442172237f8314f99191bf4e1729",
+    "s": "Yahoo"
+   },
+   {
+    "h": "A $3.7 Billion Reason Why Intuit Stock Is Down Today",
+    "u": "https://finnhub.io/api/news?id=0150eece1aba27a0737cf0cf8a30af3bdfe8d32b33cd4eecdb50f71b87cf3273",
+    "s": "Yahoo"
+   }
+  ]
  }
 }
